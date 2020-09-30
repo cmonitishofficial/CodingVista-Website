@@ -1,0 +1,628 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 100px;
+    margin: 3px 0px;
+    /* padding: 3px 10px; */
+    width: 160px;
+    margin-top: 0px;
+    border: 2px solid rgb(26, 24, 24);
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    /* list-style: none;
+    font-size: 1.3rem; */
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.right{
+        position: absolute;
+        right: 36px;
+        top: 0px;
+        display: inline-block; 
+        margin-top: 34px;
+}
+
+#search{
+    border: 0;
+    background: #f4f4f4;
+    border-radius: 30px;
+    padding: 8px 29px;
+    width: 220px;
+    height: 30px;
+    margin-top: 12px;
+}
+
+/* HOME Section*/
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before{
+    content: "";
+    background: url('../back1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#Home h2{
+    color: black;
+    text-align: center;
+}
+
+#Home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+} 
+
+/* Services-container Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services-container .box{ 
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 20px;
+}
+#services-container{
+    background-color : #f2f2f2 ;
+}
+
+#services-container .box:hover{
+    background: grey;
+} 
+
+#services-container .box p{
+    font-family: 'Bree Serif', serif;
+    
+} 
+
+#services-container .btn{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    /* padding: 30px 0px; */
+    height: 50px;
+    width: 250px;
+    margin: auto 630px;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    /* background: url('../back1.jpg') no-repeat center center/cover; */
+    position: absolute;
+    /* height: 100%; */
+    /* width: 100%; */
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Services-items section */
+
+#services-items .btn{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    /* padding: 30px 0px; */
+    height: 50px;
+    width: 250px;
+    margin: auto 630px;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    /* background: url('../back1.jpg') no-repeat center center/cover; */
+    position: absolute;
+    /* height: 100%; */
+    /* width: 100%; */
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#item{
+    margin: 20px;
+    display: flex;
+}
+
+#item .box{ 
+    border: 1px solid black;
+    padding: 0px;
+    margin: 2px 5px;
+    /* width: 300px; */
+    border-radius: 4px;
+    background: white;
+    margin-bottom: 2px;
+    font-family: 'Bree Serif', serif;
+}
+
+#item .box img{ 
+   height: 300px;
+   width: 350px;
+   margin: auto;
+   display: block;
+}
+
+#item .box:hover{
+    background: #f2f2f2;
+} 
+
+#services-items{
+    margin-top: 140px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.h-Logo{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(18, 14, 218);
+    background-color: rgb(48, 57, 184);
+    color: wheat;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+/* .btn{
+    font-family: 'Ranchers', cursive;
+    margin: 0px 9px;
+    color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn:hover{
+    background-color: rgb(161, 183, 216);
+} */
+
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+    /* margin-top: 140px; */
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../back1.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 80px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    margin-top: 140px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact1.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea, #contact-box .btn-contact{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+#contact-box .btn-contact{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color:rgb(85, 85, 85);
+    color: wheat;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* #contact-box .btn-contact{ */
+    /* font-family: 'Ranchers', cursive;
+    margin: 0px 9px;
+    color: black;
+    padding: 4px 14px;
+    border: 2px solid ;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box .btn-contact:hover{
+    background-color: rgb(161, 197, 189);
+} */
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* About.html */
+/* This is started to about coding */
+#About{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+}
+
+#About::before{
+    content: "";
+    background-color: rgb(77, 79, 233);
+    position: absolute;
+    height: 530px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.A-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.A-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding: 12px;
+}
+
+#container{
+    margin: 50px 350px;
+}
+
+#container .bag{ 
+    border: 2px solid black;
+    padding: 34px;
+    margin: 70px 55px;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+
+/* contact.html */
+/* this is contact section */
+
+#contact1{
+    position: relative;
+}
+
+#contact1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact1.jpg') no-repeat center center/cover;
+
+}
+#contact1-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact1-box input, 
+#contact1-box textarea, #contact1-box .btn-contact1{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact1-box form{
+    width: 40%;
+}
+
+#contact1-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+#contact1-box .btn-contact1{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color:rgb(85, 85, 85);
+    color: wheat;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-contact1:hover{
+    background-color: rgb(161, 197, 189);
+}
+
+
+/* All Courses.html */
+/* This is all courses section */
+#Courses{
+    margin: 34px;
+    display: block;
+    background-image: url('../img/2\ \(11\).jpg')  no-repeat center center/cover;
+}
+#Courses-items .box{ 
+    border: 2px solid black;
+    padding: 34px;
+    height: 400px;
+    margin: 2px 55px;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+#Courses-items .box:hover{
+    background: grey;
+} 
+
+#Courses .box img{ 
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    display: block;
+ }
+
+#Courses-items{
+    background-color : #f2f2f2 ;
+}
+
+#Courses-items .box .btn-secondary{
+    font-family: 'Ranchers', cursive;
+    margin: 0px 520px;
+    /* color: black; */
+    padding: 4px 14px;
+    /* border: 2px solid grey; */
+    border-radius: 3px;
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+/* Entroll.html */
+/* Entroll form section */
+.FORM{
+    /* border: 2px solid grey; */
+    margin: 110px 80px ;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+    margin-top: 200px;
+}
+
+.form-group input{
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+    display: block;
+    width: 410px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    
+}
+
+.FORM h2{
+    text-align: center;
+}
+.FORM button{
+    display: block;
+    width: 410px;
+    margin: 15px auto;
+    font-size: 25px;
+}
+.btn{
+    font-family: 'Ranchers', cursive;
+    margin: 0px 300px;
+    color: black;
+    padding: 4px 14px;
+    /* border: 2px solid grey; */
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(161, 197, 189);
+}
+#Left .Entroll{
+    /* border: 2px solid grey;  */
+    position: absolute;
+    padding: 20px 3px;
+    margin: auto;
+    left: 40px;
+    top: 300px;
+    display: inline-block;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    }
+
+#right .FORM{
+    /* border: 2px solid wheat; */
+    position: absolute;
+    right: 15px;
+    top: 43px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+    }   
+
+#MAIN{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+#MAIN::before{
+    content: "";
+    background: url('../back1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    }
+    
+#MAIN h2{
+    color: black;
+    text-align: center;
+    }
+    
+#MAIN p{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    } 
